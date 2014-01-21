@@ -1,0 +1,68 @@
+/* Homepage */
+body {
+	max-width: 1064px;
+	font-family: Helvetica, Tahoma, sans-serif;
+	background-color: #d3d3d3;
+}
+
+h1 {
+	font-family: Courier, serif;
+	color: #ff7c00;
+}
+
+h2, h3, h4, h5, h6 {
+
+	color: #0064b2;
+}
+
+/* Menu Nav */
+.navbox {
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+
+}
+
+.nav {
+	width: 75px;
+	display: inline-block;
+	border-right: 2px dotted #008fff;
+	padding: 5px;
+	text-align: center;
+	}
+
+.nav a {
+	text-decoration: none;
+	color: #002a4c;
+
+	}
+	
+
+/*Profile Image */
+.profileimage {
+	
+	border-radius: 80%;
+	margin-bottom: 20px;
+}
+
+/* Blog Preview */
+
+.blogpost {
+	margin: 40px 40px;
+    background: #ddd;
+    padding: 10px;
+    border: 2px solid #ff7c00;
+
+}
+
+/* Links */
+.maincontent a {
+
+	color: #008fff;
+	text-decoration: none;
+}
+
+.maincontent a:hover {
+	font-weight: bold;
+}
