@@ -1,0 +1,229 @@
+/* Homepage --- pre-Jekyll CSS */
+/*body {
+	max-width: 1064px;
+	font-family: Helvetica, Tahoma, sans-serif;
+}
+
+h1 {
+	font-family: Courier, serif;
+	color: #ff7c00;
+}
+
+h2, h3, h4, h5, h6 {
+
+	color: #0064b2;
+}
+/***************************/
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+	
+body {
+	background: url(cuadros.png);
+	background-repeat: repeat;
+}	
+
+
+h1 {
+	font-family: 'Bevan', serif;
+	color: #ff7c00;
+	margin-bottom: 1em;
+	font-weight: 4em;
+}
+
+h2, h3, h4, h5, h6 {
+
+	color: #0064b2;
+}
+.site {
+  font-family: Tahoma, sans-serif;
+  font-size: 115%;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+
+  
+}
+
+.header {
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+	color: #008fff;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+.header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.header a.extra:hover {
+  color: #000;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+
+
+
+.posts {
+	border: 2px solid gray;
+	padding: 10px;
+}
+
+.posts a{
+	color: gray;
+	text-decoration: none;
+	text-transform: uppercase;
+}	
+
+.post_meta {
+	color: #ff7c00;
+}
+
+/* Jekyll stuff */
+
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+.meta {
+	font-size: 1.5em;
+	display: inline-block;	
+}
+
+/* end of Jekyll stuff */
+
+.header a.extra {
+	text-align: center;
+	text-decoration: none;
+	color: #002a4c;
+
+	}
+
+.navbox {
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+
+}
+
+.navbox ul {
+	text-align: center;
+}
+
+.navbox li {
+	display: inline-block;
+	margin: 20px;
+}
+
+.navbox a.nav {
+	width: 75px;
+	border-bottom: 2px dotted #008fff;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #002a4c;
+
+	}
+
+/*Footer - Contact info*/
+
+.footer {
+	clear: both;
+}
+.contact {
+	float: left;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: .6em;
+	color: gray;
+	margin-top: 40px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+}
+
+.contact a{
+	text-decoration: none;
+	color: #008fff;
+}
+
+.contact a:hover{
+	font-weight: bold;
+}
+
+.profileimage {
+	
+	border-radius: 5%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	float: left;
+}
+
+/* Blog Preview 
+
+.blogpost {
+	margin: 40px 40px;
+    background: #ddd;
+    padding: 10px;
+    border: 2px solid #ff7c00;
+
+}
+*/
+/* Links 
+.maincontent a {
+
+	color: #008fff;
+	text-decoration: none;
+}
+
+.maincontent a:hover {
+	font-weight: bold;
+}
+*/
