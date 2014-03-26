@@ -1,15 +1,341 @@
----
-layout: default
-title: Christina Carter
----
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATX Homebrew Swap</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <!-- My Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- My Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 
-<div id="home">
-  <h2>Blog Posts</h2>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span class="post_meta">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt | truncatewords:25}}</p></li>
-    {% endfor %}
-  </ul>
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body class="main">
+    
+<!--Header area -->
+  <div id="header">
+    <div id="header_opacity">
+      <div class="row">
+        <a href="index.html">
+        <div class="large-12 columns" id="header_title">
+          <h1 class="title">ATX homebrew swap</h1>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<div id="navmenu">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="events.html">events</a></li>
+      <li><a href="beer_gallery.html">beer gallery</a></li>
+      <li><a href="tasting.html">tasting tips</a></li>
+
+    </ul>
+  </div>
   
-</div>
+<div class="wrapper">
+ <!-- Intro and overview info -->   
+    <div class="row">
+      <div id= "site_overview" class="large-12 columns">	        
+	        <div class="row">
+	        	<div class="large-4 medium-4 columns">
+              <h3>swap</h3>
+              <h2><i class="fi-torsos-all"></i></h2>
+	    		     <p>Share with your fellow homebrewers. Swap your beers.</p>
+	    	    </div>
+            <div class="large-4 medium-4 columns">
+              <h3>review</h3>
+              <h2><i class="fi-clipboard-pencil"></i></h2>
+               <p>Provide feedback on the beers you tasted. Keep it constructive!</p>
+            </div>
+            <div class="large-4 medium-4 columns">
+              <h3>repeat</h3>
+              <h2><i class="fi-shuffle"></i></h2>
+               <p>Get feedback to improve your next brew and keep swapping.</p>
+            </div>
+	        	    
+					</div>
+      </div>
+    </div>
+
+<!-- Event info section  -->
+    <div class="row">
+      <div class="small-12 medium-6 large-6 columns">
+        <h3>Next Event: April Beer Swap</h3>
+        <p><strong>Date:</strong> April 05, 2014</p>
+        <p><strong>Time:</strong> 1:00 - 6:30 pm</p>
+        <p><strong>Location:</strong> House <a href="http://maps.google.com" target="_blank">map</a></p>
+        <div><a href="events.html">More Events</a></div>
+      </div>
+      <div class="show-for-medium-up medium-6 large-6 columns">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3442.021618859343!2d-97.663098!3d30.378743999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644c924887c7577%3A0xced40349c4c19c79!2s11801+Tobler+Trail!5e0!3m2!1sen!2sus!4v1395867009580" width="400" height="300" frameborder="0" style="border:0"></iframe>
+      </div>
+    </div>
+
+    <hr />
+
+<!-- Featured beer section  -->
+    <div class="row">
+      <div class="small-12 columns">
+        <h3>Featured Beers</h3>
+          <div class="row">
+            <div class="small-4 columns photos">
+              <p><img src="img/large/beer_01_smash.jpg" alt="Photo of SMaSH beer"/></p>
+            </div>
+            <div class="small-4 columns photos">
+              <p><img src="img/large/beer_05_stout.jpg" alt="Photo of stout beer"/></p>
+            </div>
+            <div class="small-4 columns photos">
+              <p><img src="img/large/beer_06_amber.jpg" alt="Photo of amber beer"/></p>
+            </div>        
+          </div>
+        <div><a href="beer_gallery.html">Beer Gallery</a></div>
+      </div>
+    </div>
+
+    <hr />
+
+<!--  Swap and Review Submission section  -->
+    <div id="form_area" class="row">
+      <div class="small-6 columns">
+        <div class="callout panel">
+        <h4>Ready to swap?</h4>
+        <a href="#" data-reveal-id="beerFormModal" data-reveal class="small radius button">Submit a Beer</a><br/>
+        </div>
+      </div>
+      <div class="small-6 columns">
+        <div class="callout panel">
+        <h4>Ready to review?</h4>
+        <a href="#" class="small radius button">Review a Beer</a><br/>
+        </div>
+      </div>
+    </div>
+        <!-- Begin Beer Form Modal -->
+          <div id="beerFormModal" class="reveal-modal" data-reveal>
+        <!-- Form to Enter a Beer to Swap -->   
+          <div class="row">
+            <div class="small-12 columns swap-form">
+              <h3>What Beer Will You Swap?</h3>
+            </div>
+          </div>
+           <a class="close-reveal-modal">&#215;</a>
+          <div class="row">
+            <div>
+              <!-- Form Fields Start Here -->
+              <form data-abide action="http://getsimpleform.com/messages?form_api_token=d2481b9dab8069c0b46ba920f837be53" method="post">
+                <div class="row">
+                  <input type='hidden' name='redirect_to' value='http://google.com' /> <!-- Change this URL once hosted -->
+                </div>
+
+                <div class="row">
+                  <div class="large-8 columns">
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label class="fieldTitle right inline">Name</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" name='name' placeholder="Your Name" required/>
+                        <small class="error">Please enter your name.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="small-8 columns">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label class="fieldTitle right inline">E-mail</label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="email" name='email'  pattern="email" placeholder="your@email.com" required />
+                          <small class="error">Please give a valid email.</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label class="fieldTitle right inline">Beer Style</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <select name="beer_style" placeholder="BJCP Style" required>
+                          <option value="light_lager">1. LIGHT LAGER</option> 
+                          <option value="pils">2. PILSNER</option>
+                          <option value="euro_amber_lager">3. EUROPEAN AMBER LAGER</option>
+                          <option value="dark_lager">4. DARK LAGER</option>
+                          <option value="bock">5. BOCK</option>
+                          <option value="light_hybrid">6. LIGHT HYBRID BEER</option>
+                          <option value="amber_hybrid">7. AMBER HYBRID BEER</option>
+                          <option value="english_pale">8. ENGLISH PALE ALE</option>
+                          <option value="scottish_irish_ale">9. SCOTTISH AND IRISH ALE</option>
+                          <option value="american_ale">10. AMERICAN ALE</option>
+                          <option value="english_brown_ale">11. ENGLISH BROWN ALE</option>
+                          <option value="porter">12. PORTER</option>
+                          <option value="stout">13. STOUT</option>
+                          <option value="ipa">14. INDIA PALE ALE (IPA)</option>
+                          <option value="german_wheat_rye">15. GERMAN WHEAT AND RYE BEER</option>
+                          <option value="belgian_french_ale">16. BELGIAN AND FRENCH ALE</option>
+                          <option value="sour">17. SOUR ALE</option>
+                          <option value="belgian_strong">18. BELGIAN STRONG ALE</option>
+                          <option value="strong">19. STRONG ALE</option>
+                          <option value="fruit">20. FRUIT BEER</option>
+                          <option value="spice_herb_veg">21. SPICE / HERB / VEGETABLE BEER</option>
+                          <option value="smoke_or_wood">22. SMOKE-FLAVORED AND WOOD-AGED BEER</option>
+                          <option value="specialty">23. SPECIALTY BEER</option>
+                          <option value="mead">MEAD</option>
+                          <option value="cider">CIDER</option>
+                          <option value="other">Other</option><!-- Can I find some xml or something for this long list? -->
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-2 columns">
+                        <label class="fieldTitle right inline">ABV</label>
+                      </div>
+                      <div class="small-2 columns">
+                        <input type="text" name="abv" placeholder="%">
+                      </div>
+                      <div class="small-2 columns">
+                        <label class="fieldTitle right inline">IBU</label>
+                      </div>
+                      <div class="small-2 columns">
+                        <input type="text" name="ibu" placeholder="#">
+                      </div>
+                      <div class="small-2 columns">
+                        <label class="fieldTitle right inline">SRM</label>
+                      </div>
+                      <div class="small-2 columns">
+                        <input type="text" name="srm" placeholder="#">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-2 columns">
+                        <label class="fieldTitle right inline">Size</label>
+                      </div>
+                      <div class="small-4 columns">
+                        <select name="bottle_size" required>
+                          <option value="12oz">12 oz.</option> 
+                          <option value="22oz">22 oz.</option>
+                          <option value="750mL">750 mL</option> 
+                          <option value="other">other</option>
+                        </select>
+                      </div>
+                      <div class="small-2 columns">
+                        <label class="fieldTitle right inline">Qty</label>
+                      </div>
+                      <div class="small-4 columns">
+                        <input type="number" name="quantity" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="small-8 columns">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label class="fieldTitle right inline">Brew Date</label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input name="brew_date" type="datetime"/>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label class="fieldTitle">Brewing Method</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <select name="brewing_method" required>
+                          <option value="all_grain">All Grain</option> 
+                          <option value="extract">Extract</option>
+                          <option value="mini_mash">Mini Mash</option> 
+                          <option value="brew_in_a_bag">Brew in a Bag</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="row">
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label class="fieldTitle right inline">Recipe</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <textarea name="recipe" placeholder="Beersmith link, kit description, or directions"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-8 columns">
+                    <button type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+       
+      </div> <!-- end of Beer Entry Form Modal -->
+    </div>
+  </div>
+
+    <hr />
+
+    <!-- Beer Tasting info section  -->
+    <div class="row">
+      <div class="small-12 columns">
+        <h3>Beer Tasting 101</h3>
+        <p>Brush up on beer tasting terminology and techniques to help you appreciate the beers you try and provide better feedback in your reviews!</p>
+        <div><a href="tasting.html">Learn More</a></div>
+        <br/>
+      </div>
+    </div>
+
+    </div><!-- End wrapper -->
+
+    <!--Footer area -->
+
+    <div class="row">
+      <div class="small-12 columns">
+        <p>&nbsp;</p>
+      </div>
+    </div>
+
+    
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <!-- Fittext  -->
+        <script src="js/jquery.fittext.js"></script>
+        <script>
+            //call fitText() function for the element you want to be fluid
+            $("#header_title").fitText();
+            //Font-size = 1/10th of the element's width
+        </script>
+  </body>
+</html>

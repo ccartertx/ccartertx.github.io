@@ -1,0 +1,91 @@
+/* Custom Styles */
+
+/* Page Styles */
+.main {
+	background-image: url(../img/subway-lines.png);
+	background-position: top left repeat;
+	background-repeat: repeat;
+}
+
+h1 {
+	font-size: 100%;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+ 	color: #666666;
+ 	text-transform: uppercase;
+}
+
+#navmenu {
+	text-align: center;
+	background: #6599FF;
+}
+#navmenu ul {margin: 0; padding: 0; 
+	list-style-type: none; list-style-image: none; }
+#navmenu li {display: inline; }
+#navmenu ul li a {text-decoration:none;
+	padding: 1%; color: #666666;
+	background: #6599FF;}
+#navmenu ul li a:hover {
+	background: #ffd700;
+	font-weight: bolder; }
+
+.wrapper {
+	background: white;
+}
+
+/* Header Styles */
+#header_opacity {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#header_title h1 {
+ 	color: #666666;
+ 	text-shadow: 0px 4px 5px #8B6508;
+ 	text-align: center;
+ 	text-transform: lowercase;
+  	/*-webkit-text-stroke: .7px #fffacd;*/ 
+ }
+
+ #site_overview {
+ 	margin-top: 3%;
+ 	padding: 3%;
+ 	text-align: center;
+ 	background: #666;
+ 	color: white;
+ }
+
+ #site_overview h3 {
+ 	color: #6599FF;
+ 	font-weight: bolder;
+ 	text-transform: lowercase;
+ }
+
+ #site_overview h2 {
+ 	color: #ffd700;
+ }
+
+ /* Google Map*/
+ .map {
+ 	margin: 2%;
+ }
+
+ /* Photo Styles */
+ .photos img {
+	border-radius: 3%;
+	width: 100%;
+	height: 100%;
+}
+
+/* Form Area */
+#form_area h4 {
+ 	color: #ffd700;
+ }
+
+ /* Form Styles */
+
+ .swap-form h3 {
+ 	color: #ffd700;
+ 	font-weight: bolder;
+ }
